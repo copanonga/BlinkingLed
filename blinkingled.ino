@@ -8,18 +8,18 @@ void setup()
 
 void loop()
 {
-  encender();
+  start();
   delay(1000);
-  apagar();
+  stop();
   delay(1000);
 }
 
-void encender() {
-  Serial.println("Encender...");
+void start() {
+  Serial.println("Start...");
   digitalWrite(ledPin, HIGH);
 }
 
-void apagar(){
-  Serial.println("Apagar...");
+void stop(){
+  Serial.println("Stop...");
   digitalWrite(ledPin, LOW);  
 }
